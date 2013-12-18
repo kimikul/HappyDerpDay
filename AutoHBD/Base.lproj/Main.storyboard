@@ -50,36 +50,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2g4-bO-LAQ">
-                                <rect key="frame" x="20" y="54" width="280" height="46"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2g4-bO-LAQ">
+                                <rect key="frame" x="28" y="42" width="272" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="3Tn-Dh-Wxq"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TTT-iz-kT5">
-                                <rect key="frame" x="20" y="113" width="280" height="435"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="TTT-iz-kT5">
+                                <rect key="frame" x="20" y="125" width="280" height="423"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="separatorInset" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <outlet property="dataSource" destination="XNV-MR-iVk" id="Ndf-MD-HOC"/>
                                     <outlet property="delegate" destination="XNV-MR-iVk" id="XXS-Xc-1Rm"/>
                                 </connections>
                             </tableView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Fk-9L-Z2j">
+                                <rect key="frame" x="28" y="71" width="272" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="T3s-IA-QZy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="nb2-bB-vlA" firstAttribute="top" secondItem="TTT-iz-kT5" secondAttribute="bottom" constant="20" id="0su-2t-oVW"/>
-                            <constraint firstItem="TTT-iz-kT5" firstAttribute="top" secondItem="2g4-bO-LAQ" secondAttribute="bottom" constant="13" id="4XQ-Z7-a2r"/>
-                            <constraint firstItem="2g4-bO-LAQ" firstAttribute="top" secondItem="Yde-2h-z8I" secondAttribute="bottom" constant="34" id="FxG-24-tf5"/>
-                            <constraint firstItem="2g4-bO-LAQ" firstAttribute="leading" secondItem="pH1-FW-WgM" secondAttribute="leading" constant="20" id="MgK-EX-1a9"/>
+                            <constraint firstItem="TTT-iz-kT5" firstAttribute="top" secondItem="2g4-bO-LAQ" secondAttribute="bottom" constant="55" id="4XQ-Z7-a2r"/>
+                            <constraint firstItem="2g4-bO-LAQ" firstAttribute="leading" secondItem="6Fk-9L-Z2j" secondAttribute="leading" id="6nm-Ap-Twd"/>
+                            <constraint firstItem="6Fk-9L-Z2j" firstAttribute="top" secondItem="2g4-bO-LAQ" secondAttribute="bottom" constant="1" id="FtE-ee-kI3"/>
+                            <constraint firstItem="2g4-bO-LAQ" firstAttribute="top" secondItem="Yde-2h-z8I" secondAttribute="bottom" constant="22" id="FxG-24-tf5"/>
+                            <constraint firstItem="2g4-bO-LAQ" firstAttribute="leading" secondItem="pH1-FW-WgM" secondAttribute="leading" constant="28" id="MgK-EX-1a9"/>
                             <constraint firstAttribute="trailing" secondItem="2g4-bO-LAQ" secondAttribute="trailing" constant="20" id="XdW-Cq-nfd"/>
                             <constraint firstItem="TTT-iz-kT5" firstAttribute="leading" secondItem="pH1-FW-WgM" secondAttribute="leading" constant="20" id="ZZR-lt-gT4"/>
-                            <constraint firstItem="TTT-iz-kT5" firstAttribute="top" secondItem="2g4-bO-LAQ" secondAttribute="bottom" constant="13" id="c0r-PT-Vfp"/>
+                            <constraint firstItem="TTT-iz-kT5" firstAttribute="top" secondItem="2g4-bO-LAQ" secondAttribute="bottom" constant="55" id="c0r-PT-Vfp"/>
                             <constraint firstAttribute="trailing" secondItem="TTT-iz-kT5" secondAttribute="trailing" constant="20" id="uyY-yd-FGv"/>
+                            <constraint firstItem="2g4-bO-LAQ" firstAttribute="width" secondItem="6Fk-9L-Z2j" secondAttribute="width" id="y3V-Kl-h38"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="2g4-bO-LAQ" id="QMT-fJ-DZc"/>
+                        <outlet property="numBirthdaysLabel" destination="6Fk-9L-Z2j" id="7aZ-MK-ooT"/>
                         <outlet property="tableView" destination="TTT-iz-kT5" id="5p7-Go-3h0"/>
                     </connections>
                 </viewController>

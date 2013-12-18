@@ -10,6 +10,7 @@
 #import "AHFriendBirthdayCell.h"
 
 @interface AHHomeViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *numBirthdaysLabel;
 @property (nonatomic, strong) NSArray *friendsWithBirthdaysToday;
 @property (weak, nonatomic) IBOutlet UILabel *dateLabel;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -74,10 +75,34 @@
     }
     
     _friendsWithBirthdaysToday = [friendsWithBirthdaysToday copy];
-    [self.tableView reloadData];
+    
+    [self updateNumBirthdaysLabel];
+    [self reloadTableWithFade];
+}
+
+- (void)updateNumBirthdaysLabel {
+    NSInteger numBirthdays = _friendsWithBirthdaysToday.count;
+    NSString *birthdaysLabelText = [NSString stringWithFormat:@"You have %d friends with birthdays today",numBirthdays];
+    if (numBirthdays == 1) {
+        birthdaysLabelText = [NSString stringWithFormat:@"You have %d friend with a birthday today", numBirthdays];
+    }
+
+    _numBirthdaysLabel.text = birthdaysLabelText;
 }
 
 #pragma mark - Table view data source
+
+- (void)reloadTableWithFade {
+    [self.tableView reloadData];
+    
+    CATransition *transition = [CATransition animation];
+    transition.type = kCATransitionFade;
+    transition.duration = 0.2;
+    
+    CALayer *viewLayer  = self.tableView.layer;
+    [viewLayer removeAnimationForKey:@"fadeTransition"];
+    [viewLayer addAnimation:transition forKey:@"fadeTransition"];
+}
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
