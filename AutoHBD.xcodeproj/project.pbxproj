@@ -14,13 +14,17 @@
 		5EB341311861654000A47F27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB341301861654000A47F27 /* main.m */; };
 		5EB341351861654000A47F27 /* AHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB341341861654000A47F27 /* AHAppDelegate.m */; };
 		5EB341381861654000A47F27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EB341361861654000A47F27 /* Main.storyboard */; };
-		5EB3413B1861654000A47F27 /* AHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3413A1861654000A47F27 /* AHViewController.m */; };
+		5EB3413B1861654000A47F27 /* AHLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3413A1861654000A47F27 /* AHLoginViewController.m */; };
 		5EB3413D1861654000A47F27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3413C1861654000A47F27 /* Images.xcassets */; };
 		5EB341441861654000A47F27 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB341431861654000A47F27 /* XCTest.framework */; };
 		5EB341451861654000A47F27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB341241861654000A47F27 /* Foundation.framework */; };
 		5EB341461861654000A47F27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB341281861654000A47F27 /* UIKit.framework */; };
 		5EB3414E1861654000A47F27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5EB3414C1861654000A47F27 /* InfoPlist.strings */; };
 		5EB341501861654000A47F27 /* AutoHBDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3414F1861654000A47F27 /* AutoHBDTests.m */; };
+		5EB3415A18616CF200A47F27 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EB3415918616CF200A47F27 /* FacebookSDK.framework */; };
+		5EB3415D1861733E00A47F27 /* AHHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3415C1861733E00A47F27 /* AHHomeViewController.m */; };
+		5EB341601861863B00A47F27 /* AHFriendBirthdayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB3415F1861863B00A47F27 /* AHFriendBirthdayCell.m */; };
+		5EB34162186186EB00A47F27 /* AHFriendBirthdayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5EB34161186186EB00A47F27 /* AHFriendBirthdayCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +49,20 @@
 		5EB341331861654000A47F27 /* AHAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHAppDelegate.h; sourceTree = "<group>"; };
 		5EB341341861654000A47F27 /* AHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHAppDelegate.m; sourceTree = "<group>"; };
 		5EB341371861654000A47F27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5EB341391861654000A47F27 /* AHViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHViewController.h; sourceTree = "<group>"; };
-		5EB3413A1861654000A47F27 /* AHViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHViewController.m; sourceTree = "<group>"; };
+		5EB341391861654000A47F27 /* AHLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AHLoginViewController.h; sourceTree = "<group>"; };
+		5EB3413A1861654000A47F27 /* AHLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AHLoginViewController.m; sourceTree = "<group>"; };
 		5EB3413C1861654000A47F27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5EB341421861654000A47F27 /* AutoHBDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutoHBDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EB341431861654000A47F27 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		5EB3414B1861654000A47F27 /* AutoHBDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AutoHBDTests-Info.plist"; sourceTree = "<group>"; };
 		5EB3414D1861654000A47F27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5EB3414F1861654000A47F27 /* AutoHBDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoHBDTests.m; sourceTree = "<group>"; };
+		5EB3415918616CF200A47F27 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		5EB3415B1861733E00A47F27 /* AHHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHHomeViewController.h; sourceTree = "<group>"; };
+		5EB3415C1861733E00A47F27 /* AHHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHHomeViewController.m; sourceTree = "<group>"; };
+		5EB3415E1861863B00A47F27 /* AHFriendBirthdayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AHFriendBirthdayCell.h; sourceTree = "<group>"; };
+		5EB3415F1861863B00A47F27 /* AHFriendBirthdayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AHFriendBirthdayCell.m; sourceTree = "<group>"; };
+		5EB34161186186EB00A47F27 /* AHFriendBirthdayCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AHFriendBirthdayCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EB341271861654000A47F27 /* CoreGraphics.framework in Frameworks */,
+				5EB3415A18616CF200A47F27 /* FacebookSDK.framework in Frameworks */,
 				5EB341291861654000A47F27 /* UIKit.framework in Frameworks */,
 				5EB341251861654000A47F27 /* Foundation.framework in Frameworks */,
 			);
@@ -101,6 +112,7 @@
 		5EB341231861654000A47F27 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5EB3415918616CF200A47F27 /* FacebookSDK.framework */,
 				5EB341241861654000A47F27 /* Foundation.framework */,
 				5EB341261861654000A47F27 /* CoreGraphics.framework */,
 				5EB341281861654000A47F27 /* UIKit.framework */,
@@ -115,10 +127,15 @@
 				5EB341331861654000A47F27 /* AHAppDelegate.h */,
 				5EB341341861654000A47F27 /* AHAppDelegate.m */,
 				5EB341361861654000A47F27 /* Main.storyboard */,
-				5EB341391861654000A47F27 /* AHViewController.h */,
-				5EB3413A1861654000A47F27 /* AHViewController.m */,
+				5EB341391861654000A47F27 /* AHLoginViewController.h */,
+				5EB3413A1861654000A47F27 /* AHLoginViewController.m */,
+				5EB3415B1861733E00A47F27 /* AHHomeViewController.h */,
+				5EB3415C1861733E00A47F27 /* AHHomeViewController.m */,
 				5EB3413C1861654000A47F27 /* Images.xcassets */,
 				5EB3412B1861654000A47F27 /* Supporting Files */,
+				5EB3415E1861863B00A47F27 /* AHFriendBirthdayCell.h */,
+				5EB34161186186EB00A47F27 /* AHFriendBirthdayCell.xib */,
+				5EB3415F1861863B00A47F27 /* AHFriendBirthdayCell.m */,
 			);
 			path = AutoHBD;
 			sourceTree = "<group>";
@@ -230,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EB3413D1861654000A47F27 /* Images.xcassets in Resources */,
+				5EB34162186186EB00A47F27 /* AHFriendBirthdayCell.xib in Resources */,
 				5EB3412F1861654000A47F27 /* InfoPlist.strings in Resources */,
 				5EB341381861654000A47F27 /* Main.storyboard in Resources */,
 			);
@@ -251,7 +269,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EB341311861654000A47F27 /* main.m in Sources */,
-				5EB3413B1861654000A47F27 /* AHViewController.m in Sources */,
+				5EB341601861863B00A47F27 /* AHFriendBirthdayCell.m in Sources */,
+				5EB3413B1861654000A47F27 /* AHLoginViewController.m in Sources */,
+				5EB3415D1861733E00A47F27 /* AHHomeViewController.m in Sources */,
 				5EB341351861654000A47F27 /* AHAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,9 +399,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/kimberlyhsiao/Developer/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoHBD/AutoHBD-Prefix.pch";
 				INFOPLIST_FILE = "AutoHBD/AutoHBD-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -392,9 +417,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/kimberlyhsiao/Developer/FacebookSDK,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AutoHBD/AutoHBD-Prefix.pch";
 				INFOPLIST_FILE = "AutoHBD/AutoHBD-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

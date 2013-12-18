@@ -1,5 +1,5 @@
 //
-//  AHViewController.h
+//  AHHomeViewController.h
 //  AutoHBD
 //
 //  Created by Kimberly Hsiao on 12/17/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AHViewController : UIViewController
+@interface AHHomeViewController : UIViewController
 
 @end
